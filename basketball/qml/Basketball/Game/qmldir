@@ -1,0 +1,4 @@
+module Game
+WorldItem   1.0  WorldItem.qml
+Ball        1.0  Ball.qml
+Goal        1.0  Goal.qml
