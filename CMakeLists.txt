@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 ####### Qt
 ##################################################################
 
-find_package(Qt5 COMPONENTS Core Gui Quick Qml REQUIRED)
+find_package(Qt5 COMPONENTS Core Gui Quick Qml Svg REQUIRED)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC TRUE)
