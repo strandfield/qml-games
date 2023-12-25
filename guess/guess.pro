@@ -5,6 +5,6 @@ QT += quick qml svg
 
 SOURCES += main.cpp
 
-RESOURCES += guess.qrc
+RESOURCES += resources/guess.qrc
 
-QML_IMPORT_PATH = qml
+QML_IMPORT_PATH = resources

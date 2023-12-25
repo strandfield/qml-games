@@ -53,7 +53,7 @@ Row {
             border.color: enabled ? "green" : "black"
 
             Image {
-                source: "qrc:/assets/checkmark.svg"
+                source: "qrc:/qml/QmlGames/Guess/assets/checkmark.svg"
                 width: 0.6 * parent.width
                 height: width
                 anchors.centerIn: parent

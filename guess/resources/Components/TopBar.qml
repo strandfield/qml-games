@@ -5,7 +5,7 @@ Item {
     height: Math.max(gameWindow.height * 0.05, 36)
 
     Image {
-        source: "qrc:/assets/exit.svg"
+        source: "qrc:/qml/QmlGames/Guess/assets/exit.svg"
         height: newGameText.height
         width: height
         rotation: 180

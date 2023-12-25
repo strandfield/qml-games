@@ -1,4 +1,4 @@
-module Guess
+module Components
 GuessGameObject         1.0  GuessGameObject.qml
 ColorCodeObject         1.0  ColorCodeObject.qml
 ColorGuessObject        1.0  ColorGuessObject.qml
