@@ -22,7 +22,7 @@ Item {
     Image {
         id: goalImage
         mipmap: true
-        source: "qrc:/assets/goal.svg"
+        source: "qrc:/assets/QmlGames/Basketball/goal.svg"
 
         //anchors.centerIn: parent
 

@@ -1,17 +1,19 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/MainWindow.qml</file>
-        <file>qml/BasketballGame.qml</file>
-        <file>qml/Basketball/qmldir</file>
-		<file>qml/Basketball/StrengthBar.qml</file>
-        <file>qml/Basketball/GameItem.qml</file>
-        <file>qml/Basketball/Game/qmldir</file>
-        <file>qml/Basketball/Game/WorldItem.qml</file>
-        <file>qml/Basketball/Game/Ball.qml</file>
-        <file>qml/Basketball/Game/Goal.qml</file>
-        <file>assets/Ruslandisplay-OwBO.ttf</file>
-        <file>assets/bg_0.jpg</file>
-        <file>assets/ball.svg</file>
-        <file>assets/goal.svg</file>
+        <file>qml/QmlGames/Basketball/MainWindow.qml</file>
+        <file>qml/QmlGames/Basketball/BasketballGame.qml</file>
+        <file>qml/QmlGames/Basketball/Components/qmldir</file>
+		<file>qml/QmlGames/Basketball/Components/StrengthBar.qml</file>
+        <file>qml/QmlGames/Basketball/Components/GameItem.qml</file>
+        <file>qml/QmlGames/Basketball/Components/Game/qmldir</file>
+        <file>qml/QmlGames/Basketball/Components/Game/WorldItem.qml</file>
+        <file>qml/QmlGames/Basketball/Components/Game/Ball.qml</file>
+        <file>qml/QmlGames/Basketball/Components/Game/Goal.qml</file>
+    </qresource>
+	<qresource prefix="/assets/QmlGames/Basketball">
+        <file alias="Ruslandisplay-OwBO.ttf">assets/Ruslandisplay-OwBO.ttf</file>
+        <file alias="bg_0.jpg">assets/bg_0.jpg</file>
+        <file alias="ball.svg">assets/ball.svg</file>
+        <file alias="goal.svg">assets/goal.svg</file>
     </qresource>
 </RCC>

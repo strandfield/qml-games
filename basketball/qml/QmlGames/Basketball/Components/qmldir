@@ -1,3 +1,3 @@
-module Basketball
+module Components
 GameItem     1.0  GameItem.qml
 StrengthBar  1.0  StrengthBar.qml

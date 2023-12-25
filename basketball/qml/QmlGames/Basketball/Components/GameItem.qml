@@ -1,6 +1,6 @@
 import QtQuick 2.15
 
-import Basketball.Game 1.0
+import QmlGames.Basketball.Components.Game 1.0
 
 Item {
     id: gameItem

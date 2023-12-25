@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 
     QQuickView w;
     w.engine()->addImportPath("qrc:/qml");
-    w.setSource(QUrl("qrc:/qml/MainWindow.qml"));
+    w.setSource(QUrl("qrc:/qml/QmlGames/Basketball/MainWindow.qml"));
     w.setResizeMode(QQuickView::SizeRootObjectToView);
     w.show();
 

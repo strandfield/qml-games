@@ -1,6 +1,6 @@
 import QtQuick 2.15
 
-import Basketball 1.0
+import QmlGames.Basketball.Components 1.0
 
 Item {
     id: mainWindow
