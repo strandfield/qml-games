@@ -18,4 +18,5 @@ set(CMAKE_AUTORCC TRUE)
 ##################################################################
 
 add_subdirectory(basketball)
+add_subdirectory(guess)
 

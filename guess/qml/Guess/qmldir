@@ -1,0 +1,11 @@
+module Guess
+GuessGameObject         1.0  GuessGameObject.qml
+ColorCodeObject         1.0  ColorCodeObject.qml
+ColorGuessObject        1.0  ColorGuessObject.qml
+ColorDot                1.0  ColorDot.qml
+ColorDotRow             1.0  ColorDotRow.qml
+ColorGuessRow           1.0  ColorGuessRow.qml
+GuessFeedbackIndicator  1.0  GuessFeedbackIndicator.qml
+BottomBar               1.0  BottomBar.qml
+InputBar                1.0  InputBar.qml
+TopBar                  1.0  TopBar.qml

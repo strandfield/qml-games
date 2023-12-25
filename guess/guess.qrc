@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/checkmark.svg</file>
+        <file>assets/exit.svg</file>
+        <file>qml/MainWindow.qml</file>
+        <file>qml/GuessGame.qml</file>
+        <file>qml/GuessGrid.qml</file>
+        <file>qml/Guess/qmldir</file>
+        <file>qml/Guess/BottomBar.qml</file>
+        <file>qml/Guess/GuessGameObject.qml</file>
+        <file>qml/Guess/ColorCodeObject.qml</file>
+        <file>qml/Guess/ColorGuessObject.qml</file>
+        <file>qml/Guess/ColorDot.qml</file>
+        <file>qml/Guess/ColorDotRow.qml</file>
+        <file>qml/Guess/ColorGuessRow.qml</file>
+        <file>qml/Guess/GuessFeedbackIndicator.qml</file>
+        <file>qml/Guess/InputBar.qml</file>
+        <file>qml/Guess/TopBar.qml</file>
+    </qresource>
+</RCC>
