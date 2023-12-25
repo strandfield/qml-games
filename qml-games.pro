@@ -1,2 +1,2 @@
 TEMPLATE = subdirs
-SUBDIRS = basketball guess
+SUBDIRS = basketball guess collection
