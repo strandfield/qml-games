@@ -6,6 +6,8 @@ import QmlGames.Guess.Components 1.0
 Item {
     id: gameWindow
 
+    anchors.fill: parent
+
     clip: true
 
     signal quitRequested

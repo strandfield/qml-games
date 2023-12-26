@@ -1,10 +1,8 @@
 TEMPLATE = app
 TARGET = guess
 
-QT += quick qml svg
+include(../window/window.pri)
 
 SOURCES += main.cpp
-
 RESOURCES += guess.qrc
-
 QML_IMPORT_PATH = qml
