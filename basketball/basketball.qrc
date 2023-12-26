@@ -16,4 +16,7 @@
         <file alias="ball.svg">assets/ball.svg</file>
         <file alias="goal.svg">assets/goal.svg</file>
     </qresource>
+    <qresource prefix="/manifest/QmlGames/Basketball">
+        <file>manifest.ini</file>
+    </qresource>
 </RCC>

@@ -19,4 +19,7 @@
         <file alias="checkmark.svg">assets/checkmark.svg</file>
         <file alias="exit.svg">assets/exit.svg</file>
     </qresource>
+    <qresource prefix="/manifest/QmlGames/Guess">
+        <file>manifest.ini</file>
+    </qresource>
 </RCC>
