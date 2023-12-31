@@ -41,24 +41,13 @@ Row {
         spacing: theFlow.spacing
         padding: 0
 
-        Rectangle {
+        Image {
             id: submitButton
-            color: "white"
-            radius: buttonRadius
-            height: radius*2
+            source: enabled ? "qrc:/assets/QmlGames/Guess/checkmark_green_on.svg" : "qrc:/assets/QmlGames/Guess/checkmark_green_off.svg"
+            height: buttonRadius*2
             width: height
             enabled: game.currentGuess && game.currentGuess.complete
-            opacity: enabled ? 1 : 0.3
-            border.width: 2
-            border.color: enabled ? "green" : "black"
-
-            Image {
-                source: "qrc:/assets/QmlGames/Guess/checkmark.svg"
-                width: 0.6 * parent.width
-                height: width
-                anchors.centerIn: parent
-                mipmap: true
-            }
+            mipmap: true
 
             MouseArea {
                 anchors.fill: parent
@@ -71,32 +60,13 @@ Row {
         }
 
 
-        Rectangle {
+        Image {
             id: eraseButton
-            color: "transparent"
-            radius: buttonRadius
-            height: radius*2
+            source: enabled ? "qrc:/assets/QmlGames/Guess/cancel_orange_on.svg" : "qrc:/assets/QmlGames/Guess/cancel_orange_off.svg"
+            height: buttonRadius*2
             width: height
             enabled: game.currentGuess && !game.currentGuess.empty
-            opacity: enabled ? 1 : 0.3
-            border.width: 2
-            border.color: "orange"
-
-            Rectangle {
-                anchors.centerIn: parent
-                rotation: 45
-                color: "orange"
-                width: 0.6 * parent.width
-                height: 0.1 * parent.height
-            }
-
-            Rectangle {
-                anchors.centerIn: parent
-                rotation: 90 + 45
-                color: "orange"
-                width: 0.6 * parent.width
-                height: 0.1 * parent.height
-            }
+            mipmap: true
 
             MouseArea {
                 anchors.fill: parent
