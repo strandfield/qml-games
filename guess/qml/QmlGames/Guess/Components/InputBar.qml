@@ -75,6 +75,10 @@ Row {
                 onClicked: {
                     gameWindow.eraseLastInput();
                 }
+
+                onPressAndHold: {
+                    gameWindow.eraseCurrentLine();
+                }
             }
         }
     }

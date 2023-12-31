@@ -70,6 +70,13 @@ Item {
         }
     }
 
+    function eraseCurrentLine() {
+        if (game.finished) return;
+
+        let g = game.currentGuess;
+        g.clear();
+    }
+
     ColumnLayout {
 
         height: parent.height
