@@ -11,7 +11,7 @@ RESOURCES += collection.qrc \
   ../basketball/basketball.qrc \
   ../guess/guess.qrc
 
-QML_IMPORT_PATH = qml
+QML_IMPORT_PATH = $$PWD/qml
 
 HEADERS += \
     game.h \

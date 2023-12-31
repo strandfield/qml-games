@@ -5,4 +5,5 @@ include(../window/window.pri)
 
 SOURCES += main.cpp
 RESOURCES += guess.qrc
-QML_IMPORT_PATH = qml
+
+QML_IMPORT_PATH = $$PWD/qml
