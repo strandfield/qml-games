@@ -43,7 +43,7 @@ Row {
 
         Image {
             id: submitButton
-            source: enabled ? "qrc:/assets/QmlGames/Guess/checkmark_green_on.svg" : "qrc:/assets/QmlGames/Guess/checkmark_green_off.svg"
+            source: enabled ? "qrc:/assets/QmlGames/Guess/checkmark_green_on.svg" : "qrc:/assets/QmlGames/Guess/checkmark_off.svg"
             height: buttonRadius*2
             width: height
             enabled: game.currentGuess && game.currentGuess.complete
@@ -62,7 +62,7 @@ Row {
 
         Image {
             id: eraseButton
-            source: enabled ? "qrc:/assets/QmlGames/Guess/cancel_orange_on.svg" : "qrc:/assets/QmlGames/Guess/cancel_orange_off.svg"
+            source: enabled ? "qrc:/assets/QmlGames/Guess/cancel_orange_on.svg" : "qrc:/assets/QmlGames/Guess/cancel_off.svg"
             height: buttonRadius*2
             width: height
             enabled: game.currentGuess && !game.currentGuess.empty

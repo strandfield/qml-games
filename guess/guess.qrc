@@ -17,10 +17,13 @@
     </qresource>
     <qresource prefix="/assets/QmlGames/Guess">
         <file alias="cancel_orange_on.svg">assets/cancel_orange_on.svg</file>
-        <file alias="cancel_orange_off.svg">assets/cancel_orange_off.svg</file>
+        <file alias="cancel_off.svg">assets/cancel_off.svg</file>
         <file alias="checkmark_green_on.svg">assets/checkmark_green_on.svg</file>
-        <file alias="checkmark_green_off.svg">assets/checkmark_green_off.svg</file>
+        <file alias="checkmark_off.svg">assets/checkmark_off.svg</file>
+        <file alias="checkmark_yellow.svg">assets/checkmark_yellow.svg</file>
         <file alias="exit.svg">assets/exit.svg</file>
+        <file alias="bluedot.svg">assets/bluedot.svg</file>
+        <file alias="greydot.svg">assets/greydot.svg</file>
     </qresource>
     <qresource prefix="/manifest/QmlGames/Guess">
         <file>manifest.ini</file>
