@@ -1,17 +1,14 @@
 import QtQuick 2.15
 
-import Basketball 1.0
+import QmlGames.Basketball.Components 1.0
 
-Item {
+Rectangle {
     id: mainWindow
 
-    width: 1024
-    height: 768
+    anchors.fill: parent
+    color: "grey"
 
-    Rectangle {
-        anchors.fill: parent
-        color: "grey"
-    }
+    signal quitRequested
 
     property real aspectRatio: mainWindow.width / mainWindow.height
     property real maxAspectRatio: 1023/418
@@ -24,7 +21,7 @@ Item {
         width: !tooLarge ? parent.width : (mainWindow.height * maxAspectRatio)
         height: !tooTall ? parent.height : (width / idealAspectRatio)
         onQuitRequested: {
-            Qt.quit();
+            mainWindow.quitRequested();
         }
     }
 }

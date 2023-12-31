@@ -52,6 +52,7 @@ QtObject {
         guesses = initGuesses(10);
     }
 
+    // todo: there seems to be a bug in there
     function verifyGuess(guessColors, code = colorCode) {
         let correct = 0;
         let misplaced = 0;

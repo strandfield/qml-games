@@ -1,0 +1,3 @@
+module Guess
+GuessGame         1.0  GuessGame.qml
+GuessGrid         1.0  GuessGrid.qml

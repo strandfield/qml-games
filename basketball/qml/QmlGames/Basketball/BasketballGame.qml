@@ -1,6 +1,6 @@
 import QtQuick 2.15
 
-import Basketball 1.0
+import QmlGames.Basketball.Components 1.0
 
 Item {
     id: gameWindow
@@ -8,13 +8,13 @@ Item {
     clip: true
 
 
-    FontLoader { id: scoreFont; source: "qrc:/assets/Ruslandisplay-OwBO.ttf" }
+    FontLoader { id: scoreFont; source: "qrc:/assets/QmlGames/Basketball/Ruslandisplay-OwBO.ttf" }
 
     signal quitRequested
 
     Image {
         z: -2
-        source: "qrc:/assets/bg_0.jpg"
+        source: "qrc:/assets/QmlGames/Basketball/bg_0.jpg"
         mipmap: true
         height: parent.height
         width: sourceSize.width * height / sourceSize.height

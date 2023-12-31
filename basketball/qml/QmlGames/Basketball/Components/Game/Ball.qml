@@ -28,7 +28,7 @@ Image {
 
     width: 2 * worldRadius * world.ppm
     height: width
-    source: "qrc:/assets/ball.svg"
+    source: "qrc:/assets/QmlGames/Basketball/ball.svg"
     x: worldX * world.ppm - 0.5 * width
     y: world.height - worldY * world.ppm - 0.5 * height
 

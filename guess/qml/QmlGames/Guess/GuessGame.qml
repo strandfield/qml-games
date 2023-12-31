@@ -1,10 +1,12 @@
 import QtQuick 2.15
 import QtQuick.Layouts 1.15
 
-import Guess 1.0
+import QmlGames.Guess.Components 1.0
 
 Item {
     id: gameWindow
+
+    anchors.fill: parent
 
     clip: true
 

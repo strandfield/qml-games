@@ -1,20 +1,25 @@
 <RCC>
     <qresource prefix="/">
-        <file>assets/checkmark.svg</file>
-        <file>assets/exit.svg</file>
-        <file>qml/MainWindow.qml</file>
-        <file>qml/GuessGame.qml</file>
-        <file>qml/GuessGrid.qml</file>
-        <file>qml/Guess/qmldir</file>
-        <file>qml/Guess/BottomBar.qml</file>
-        <file>qml/Guess/GuessGameObject.qml</file>
-        <file>qml/Guess/ColorCodeObject.qml</file>
-        <file>qml/Guess/ColorGuessObject.qml</file>
-        <file>qml/Guess/ColorDot.qml</file>
-        <file>qml/Guess/ColorDotRow.qml</file>
-        <file>qml/Guess/ColorGuessRow.qml</file>
-        <file>qml/Guess/GuessFeedbackIndicator.qml</file>
-        <file>qml/Guess/InputBar.qml</file>
-        <file>qml/Guess/TopBar.qml</file>
+        <file>qml/QmlGames/Guess/qmldir</file>
+        <file>qml/QmlGames/Guess/GuessGame.qml</file>
+        <file>qml/QmlGames/Guess/GuessGrid.qml</file>
+        <file>qml/QmlGames/Guess/Components/qmldir</file>
+        <file>qml/QmlGames/Guess/Components/BottomBar.qml</file>
+        <file>qml/QmlGames/Guess/Components/GuessGameObject.qml</file>
+        <file>qml/QmlGames/Guess/Components/ColorCodeObject.qml</file>
+        <file>qml/QmlGames/Guess/Components/ColorGuessObject.qml</file>
+        <file>qml/QmlGames/Guess/Components/ColorDot.qml</file>
+        <file>qml/QmlGames/Guess/Components/ColorDotRow.qml</file>
+        <file>qml/QmlGames/Guess/Components/ColorGuessRow.qml</file>
+        <file>qml/QmlGames/Guess/Components/GuessFeedbackIndicator.qml</file>
+        <file>qml/QmlGames/Guess/Components/InputBar.qml</file>
+        <file>qml/QmlGames/Guess/Components/TopBar.qml</file>
+    </qresource>
+    <qresource prefix="/assets/QmlGames/Guess">
+        <file alias="checkmark.svg">assets/checkmark.svg</file>
+        <file alias="exit.svg">assets/exit.svg</file>
+    </qresource>
+    <qresource prefix="/manifest/QmlGames/Guess">
+        <file>manifest.ini</file>
     </qresource>
 </RCC>
