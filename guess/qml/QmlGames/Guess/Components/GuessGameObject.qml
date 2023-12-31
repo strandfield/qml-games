@@ -52,7 +52,6 @@ QtObject {
         guesses = initGuesses(10);
     }
 
-    // todo: there seems to be a bug in there
     function verifyGuess(guessColors, code = colorCode) {
         let correct = 0;
         let misplaced = 0;
@@ -60,16 +59,24 @@ QtObject {
         let counters = colorSet.map(e => 0);
         code.forEach(c => counters[c] += 1);
 
+        // iterates a first time to count the correct colors
         for (let i = 0; i < guessColors.length; i++) {
             let c = guessColors[i];
 
             if (c == code[i]) {
                 correct += 1;
-            } else if(counters[c] > 0) {
-                misplaced += 1;
+                counters[c] -= 1;
             }
+        }
 
-            counters[c] -= 1;
+        // iterates a second time to count the misplaced colors
+        for (let i = 0; i < guessColors.length; i++) {
+            let c = guessColors[i];
+
+            if (c != code[i] && counters[c] > 0) {
+                misplaced += 1;
+                counters[c] -= 1;
+            }
         }
 
         return [correct, misplaced];
