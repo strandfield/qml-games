@@ -105,3 +105,57 @@ python C:/emsdk/upstream/emscripten/emrun.py --browser firefox --port 8080 --no_
 
 This will setup a HTTP server in Python, open Firefox on the port 8080 
 and hopefully the game will start.
+
+## Android
+
+Before starting, please read https://doc.qt.io/qt-5/android-getting-started.html
+
+The following is for Qt 5.15 on Windows.
+
+**Qt packages for Android**
+
+In the Qt Maintenance Tool, under Qt 5.15, make sure you have the `Android` package installed. 
+
+**JDK**
+
+Install a JDK x64 version 8 from here: https://adoptium.net/fr/temurin/releases/?version=8&arch=x64
+
+While installing, enable the "Set JAVA_HOME" option.
+
+**Qt Creator**
+
+We will use Qt Creator 4.15.
+We may get an offline installer from the archives here: https://download.qt.io/archive/qtcreator/4.15/
+
+We will let QtCreator setup the Android SDK/NDK; but before that,
+we need to do some hacking.
+
+Go to the installation directory of QtCreator, then in `share/qtcreator/android`.
+
+Example: `C:\Qt\qtcreator-4.15.2\share\qtcreator\android`
+
+Create a backup of `sdk_definitions.json`, then modify the original file
+so that the version of the `cmdline-tools` is no longer "latest" but rather "8.0".
+There must have been some non-backward compatible modifications to this tool
+and most recent version do not work with Java 8.
+
+Replace: `cmdline-tools;latest` by `cmdline-tools;8.0`.
+
+Open QtCreator, then open the preferences dialog.
+
+Check in `Kits > Qt versions` that the Android package is detected, 
+otherwise add it manually.
+The path to qmake should be something like `C:\Qt\5.15.2\android\bin\qmake.exe`.
+
+Then in the mobile devices section, Android tab, specify the path to the JDK if 
+it was not detected by QtCreator.
+Something like `C:\Program Files\Eclipse Adoptium\jdk-8.0.392.8-hotspot`.
+
+Then let QtCreator do a complete setup.
+
+If everything works fine, a message like "Android settings are OK. (SDK Version: 2.1, NDK Version: 21.3.6528147)"
+should be displayed.
+
+Then check in the Kits section that a Android Clang Multi-ABI kit has been added.
+
+That is the kit to use for compiling to Android!
